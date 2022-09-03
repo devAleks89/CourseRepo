@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test-method Suite" parallel="methods" thread-count="2">
+    <test name="Test-method test">
+        <classes>
+            <class name="JSTests"/>
+            <class name="ApplicationTest"/>
+            <class name="AjaxTest"/>
+            <class name="RegistrationTest"/>
+            <class name="ApplicationParserTest"/>
+            <class name="LoginLogoutTest"/>
+        </classes>
+    </test> <!-- Selenium -->
+</suite> <!-- Custom suite -->
