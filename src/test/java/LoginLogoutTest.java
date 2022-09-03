@@ -22,7 +22,6 @@ public class LoginLogoutTest extends BaseTest {
     public void correctLoginTest() {
         User user = UserBuilder.admin();
         HomePage homePage = loginPage.loginWithValidCreds(user);
-        System.out.println("Add trigger");
         assertEquals(homePage.getWelcomeMessage(), String.format("Welcome %s %s",
                 user.getFirstName(), user.getLastName()), "Message should be equal");
     }
