@@ -5,8 +5,7 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 
 import static models.UserBuilder.admin;
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.*;
 
 public class LoginLogoutTest extends BaseTest {
 
@@ -33,6 +32,6 @@ public class LoginLogoutTest extends BaseTest {
         homePage.openNewTabAndLogout()
                 .checkIsUserLoggedOutOnNewTab();
         homePage.checkIsUserLoggedOutOnFirstTab();
-        assertTrue(loginPage.isLoginButtonVisibleOnLoginPage(), "Login page should be visible");
+        assertFalse(loginPage.isLoginButtonVisibleOnLoginPage(), "Login page should be visible");
     }
 }
