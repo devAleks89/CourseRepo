@@ -8,9 +8,7 @@
     <artifactId>Selenium</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-         
-         
-         
+    
     <properties>
         <driver.version>3.141.59</driver.version>
         <selenium.properties>selenium.properties</selenium.properties>
